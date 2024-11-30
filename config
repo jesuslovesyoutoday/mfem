@@ -1,0 +1,4 @@
+make config MFEM_USE_SUITSPARSE=YES CPPFLAGS="-I /usr/include -I /usr/include/suitsparse -L /usr/lib/x86_64-linux-gnu
+
+g++ -I /usr/include -I /usr/include/suitsparse -L /usr/lib/x86_64-linux-gnu -O3 -std=c++11 -I..  ex0.cpp -o ex0 -L.. -lmfem -lrt
+
